@@ -5,6 +5,7 @@ const body = document.body;
 const theme = localStorage.getItem("theme");
 
 if (theme) {
+  body.classList.remove("light");
   body.classList.add(theme);
 }
 
