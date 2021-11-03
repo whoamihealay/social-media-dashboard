@@ -3,14 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
+    <meta
+      name="description"
+      content="Social media dashboard challenge from frontendmentor.io"
+    />
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="/manifest.json" />
     <link
       rel="icon"
-      type="image/png"
+      type="image/x-icon"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="apple-touch-icon" href="/images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,7 +26,7 @@
 
     <script defer src="index.js"></script>
 
-    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <title>Frontend Mentor | Social Media Dashboard</title>
 
     <style>
       .attribution {
@@ -44,7 +49,11 @@
         <div class="line"></div>
         <div class="flex dark-div">
           <p class="p-head">Dark Mode</p>
-          <button id="toggle" class="bg-toggle">
+          <button
+            id="toggle"
+            class="bg-toggle"
+            aria-label="Theme toggle button"
+          >
             <div id="circle" class="circle"></div>
           </button>
         </div>
@@ -171,7 +180,8 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/whoamihealay">Andrew</a>.
     </div>
   </footer>
 </html>
