@@ -1,6 +1,24 @@
-/* ***** */
-/* VARS */
-/* ***** */
+/* ################# */
+/* Table of Contents */
+/* ################# */
+
+/* 
+I   - VARS
+II  - RESET
+III - UTILITIES
+IV  - THEME
+    1. Theme vars
+    2. Background color
+V   - HEADER
+VI  - MAIN
+    1. Social Media classes
+    2. Stats Classes
+VII - FOOTER
+*/
+
+/* ########## */
+/*    VARS    */
+/* #########" */
 
 :root {
   /* Primary */
@@ -33,9 +51,9 @@
   --line-height: 1.5;
 }
 
-/* ***** */
-/* Reset */
-/* ***** */
+/* ########## */
+/*    RESET   */
+/* #########" */
 
 *,
 *::before,
@@ -83,10 +101,10 @@ a {
 
 body {
   font-family: var(--ff-sans-normal);
-  font-size: var(--fs-400);
-  color: var(--text-main);
-  background-color: var(--bg);
-  line-height: var(--line-height);
+  font-size: var(--fs-400, 1.125rem);
+  color: var(--text-main, black);
+  background-color: var(--bg, white);
+  line-height: var(--line-height, 1.5);
   min-height: 100vh;
 }
 
@@ -123,7 +141,9 @@ select {
 /* UTILITIES */
 /* ********* */
 
-/* General utils */
+body {
+  position: relative;
+}
 
 .flex {
   display: flex;
@@ -139,7 +159,7 @@ select {
   padding-inline: 1em;
   margin-inline: auto;
   min-width: 290px;
-  max-width: 23.438rem;
+  max-width: 24rem;
   width: 90%;
 }
 
@@ -155,56 +175,11 @@ select {
   border: 0;
 }
 
-/* Font family */
-
-.ff-sans-normal {
-  font-family: var(--ff-sans-normal);
-}
-
-/* Font sizes */
-
-.fs-900 {
-  font-size: var(--fs-900);
-}
-
-.fs-800 {
-  font-size: var(--fs-800);
-}
-
-.fs-700 {
-  font-size: var(--fs-700);
-}
-
-.fs-600 {
-  font-size: var(--fs-600);
-}
-
-.fs-500 {
-  font-size: var(--fs-500);
-}
-.fs-400 {
-  font-size: var(--fs-400);
-}
-.fs-300 {
-  font-size: var(--fs-300);
-}
-
-.fs-200 {
-  font-size: var(--fs-200);
-}
-
-.fw-400 {
-  font-weight: 400;
-}
-
-.fw-700 {
-  font-weight: 700;
-}
-
 /* ***** */
-/* STYLE */
+/* THEME */
 /* ***** */
 
+/* Theme Vars */
 .dark {
   --bg: hsl(230, 17%, 14%);
   --bg-top: hsl(232, 19%, 15%);
@@ -229,10 +204,7 @@ select {
   --circle-pos: 22px;
 }
 
-body {
-  position: relative;
-}
-
+/* Background Color */
 .bg-top {
   background-color: var(--bg-top);
   position: absolute;
@@ -241,10 +213,13 @@ body {
   width: 100%;
 }
 
+/* ########## */
+/*   HEADER   */
+/* #########" */
+
 .header {
   flex-direction: column;
-
-  padding: 2rem 0;
+  padding: 2em 1em;
 }
 
 .h1 {
@@ -277,12 +252,19 @@ body {
 }
 
 .line {
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  opacity: 0.1;
+  color: rgb(255, 255, 255);
+  width: 100%;
 }
 
 .dark-div {
   justify-content: space-between;
 }
+/* ########## */
+/*    Main    */
+/* #########" */
+
+/* Social Media classes */
 
 .social {
   display: flex;
@@ -422,6 +404,8 @@ body {
   background: url("./images/icon-down.svg") no-repeat;
 }
 
+/* Stats classes */
+
 .stats {
   margin: 1rem 0;
 }
@@ -454,6 +438,8 @@ body {
   margin-left: auto;
 }
 
+/* Media Queries */
+
 @media screen and (min-width: 700px) {
   .header {
     flex-direction: row;
@@ -462,7 +448,7 @@ body {
   }
 
   .line {
-    opacity: 0;
+    display: none;
   }
 
   .h1 {
@@ -494,4 +480,16 @@ body {
     grid-template-rows: repeat(2, 8rem);
     max-width: 100%;
   }
+}
+
+/* ########## */
+/*   FOOTER   */
+/* #########" */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }

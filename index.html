@@ -23,165 +23,163 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-
     <script defer src="index.js"></script>
-
     <title>Frontend Mentor | Social Media Dashboard</title>
-
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body class="light">
     <div class="bg-top"></div>
+    <header class="flex header container">
+      <div>
+        <h1 class="h1">Social Media Dashboard</h1>
+        <p class="p-head">Total Followers: 23,004</p>
+      </div>
+      <hr class="line"></hr>
+      <div class="flex dark-div">
+        <p class="p-head">Dark Mode</p>
+        <button
+          id="toggle"
+          class="bg-toggle"
+          aria-label="Theme toggle button"
+        >
+          <picture id="circle" class="circle"></picture>
+        </button>
+      </div>
+    </header>
     <main class="container">
-      <header class="flex header">
-        <div>
-          <h1 class="h1">Social Media Dashboard</h1>
-          <p class="p-head">Total Followers: 23,004</p>
-        </div>
-        <div class="line"></div>
-        <div class="flex dark-div">
-          <p class="p-head">Dark Mode</p>
-          <button
-            id="toggle"
-            class="bg-toggle"
-            aria-label="Theme toggle button"
-          >
-            <div id="circle" class="circle"></div>
-          </button>
-        </div>
-      </header>
       <section class="social">
-        <div class="card c-fb">
+        <article class="card c-fb">
+          <h2 class="sr-only">Facebook Stats</h2>
           <p class="facebook">@nathanf</p>
-          <h1 class="nbr">1987</h1>
+          <p class="nbr">1987</p>
           <p class="subs">Followers</p>
           <p class="up">12 Today</p>
-        </div>
-        <div class="card c-t">
+        </article>
+        <article class="card c-t">
+          <h2 class="sr-only">Twitter Stats</h2>
           <p class="twitter">@nathanf</p>
-          <h1 class="nbr">1044</h1>
+          <p class="nbr">1044</p>
           <p class="subs">Followers</p>
           <p class="up">99 Today</p>
-        </div>
-        <div class="card c-i">
+        </article>
+        <article class="card c-i">
+          <h2 class="sr-only">Instagram Stats</h2>
           <p class="instagram">@realnathanf</p>
-          <h1 class="nbr">11k</h1>
+          <p class="nbr">11k</p>
           <p class="subs">Followers</p>
           <p class="up">1099 Today</p>
-        </div>
-        <div class="card c-y">
+        </article>
+        <article class="card c-y">
+          <h2 class="sr-only">Youtube Stats</h2>
           <p class="youtube">Nathan F.</p>
-          <h1 class="nbr">8239</h1>
+          <p class="nbr">8239</p>
           <p class="subs">Subscribers</p>
           <p class="down">144 Today</p>
-        </div>
+        </article>
       </section>
       <section class="stats">
         <h1 class="h1">Overview - Today</h1>
         <div class="grid grid-div">
           <div class="card card-grid">
+            <h2 class="sr-only">Facebook</h2>
             <p class="grid-left p-head">Page Views</p>
             <img
               class="grid-right"
               src="./images/icon-facebook.svg"
               alt="icon-facebook"
             />
-            <h2 class="nbr-2 grid-left">87</h2>
+            <p class="nbr-2 grid-left">87</p>
             <p class="grid-right up">3%</p>
           </div>
           <div class="card card-grid">
+            <h2 class="sr-only">Facebook</h2>
             <p class="grid-left p-head">Likes</p>
             <img
               class="grid-right"
               src="./images/icon-facebook.svg"
               alt="icon-facebook"
             />
-            <h2 class="nbr-2 grid-left">52</h2>
+            <p class="nbr-2 grid-left">52</p>
             <p class="grid-right down">2%</p>
           </div>
           <div class="card card-grid">
+            <h2 class="sr-only">Instragram</h2>
             <p class="grid-left p-head">Likes</p>
             <img
               class="grid-right"
               src="./images/icon-instagram.svg"
               alt="icon-instagram"
             />
-            <h2 class="nbr-2 grid-left">5462</h2>
+            <p class="nbr-2 grid-left">5462</p>
             <p class="grid-right up">2257%</p>
           </div>
           <div class="card card-grid">
+            <h2 class="sr-only">Instagram</h2>
             <p class="grid-left p-head">Profile Views</p>
             <img
               class="grid-right"
               src="./images/icon-instagram.svg"
-              alt="icon-instagram"
+              alt="instagram icon"
             />
-            <h2 class="nbr-2 grid-left">52k</h2>
+            <p class="nbr-2 grid-left">52k</p>
             <p class="grid-right up">1375%</p>
           </div>
 
           <div class="card card-grid">
+            <h2 class="sr-only">Twitter</h2>
             <p class="grid-left p-head">Retweets</p>
             <img
               class="grid-right"
               src="./images/icon-twitter.svg"
               alt="icon-twitter"
             />
-            <h2 class="nbr-2 grid-left">117</h2>
+            <p class="nbr-2 grid-left">117</p>
             <p class="grid-right">303%</p>
           </div>
 
           <div class="card card-grid">
+            <h2 class="sr-only">Twitter</h2>
             <p class="grid-left p-head">Likes</p>
             <img
               class="grid-right"
               src="./images/icon-twitter.svg"
               alt="icon-twitter"
             />
-            <h2 class="nbr-2 grid-left">507</h2>
+            <p class="nbr-2 grid-left">507</p>
             <p class="grid-right up">553%</p>
           </div>
 
           <div class="card card-grid">
+            <h2 class="sr-only">Youtube</h2>
             <p class="grid-left p-head">Likes</p>
             <img
               class="grid-right"
               src="./images/icon-youtube.svg"
               alt="icon-youtube"
             />
-            <h2 class="nbr-2 grid-left">107</h2>
+            <p class="nbr-2 grid-left">107</p>
             <p class="grid-right down">19%</p>
           </div>
 
           <div class="card card-grid">
+            <h2 class="sr-only">Youtube</h2>
             <p class="grid-left p-head">Total Views</p>
             <img
               class="grid-right"
               src="./images/icon-youtube.svg"
               alt="icon-youtube"
             />
-            <h2 class="nbr-2 grid-left">1407</h2>
+            <p class="nbr-2 grid-left">1407</p>
             <p class="grid-right down">12%</p>
           </div>
         </div>
       </section>
     </main>
-  </body>
-  <footer>
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by
       <a href="https://www.frontendmentor.io/profile/whoamihealay">Andrew</a>.
-    </div>
-  </footer>
+    </footer>
+  </body>
 </html>
