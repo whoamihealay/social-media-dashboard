@@ -312,7 +312,7 @@ body {
 .youtube,
 .up,
 .down {
-  padding: 0.5rem;
+  padding: 0.5em;
 }
 
 .facebook,
@@ -355,7 +355,7 @@ body {
 .nbr {
   font-size: var(--fs-900);
   font-weight: 700;
-  padding-top: 0.5rem;
+  padding-top: 0.5em;
   line-height: 1;
 }
 
@@ -365,11 +365,11 @@ body {
 }
 
 .subs {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.5em;
   color: var(--text-accent);
   text-transform: uppercase;
   font-size: var(--fs-200);
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.4em;
 }
 
 .up,
@@ -407,7 +407,7 @@ body {
 /* Stats classes */
 
 .stats {
-  margin: 1rem 0;
+  margin: 1em 0;
 }
 
 .grid-div {
@@ -415,7 +415,7 @@ body {
   grid-template-rows: auto;
   justify-content: center;
   align-items: center;
-  margin: 1rem 0;
+  margin: 1em 0;
 }
 
 .card-grid {
