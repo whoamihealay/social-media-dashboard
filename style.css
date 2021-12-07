@@ -278,35 +278,42 @@ body {
 .card {
   background-color: var(--bg-card);
   width: 100%;
+  position: relative;
   border-radius: 0.3rem;
+  overflow: hidden;
   text-align: center;
   padding: 1rem;
 }
 
-.c-fb,
-.c-t,
-.c-i,
-.c-y {
-  border-top: 4px solid;
+.c-fb::before,
+.c-t::before,
+.c-i::before,
+.c-y::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 0.3rem;
 }
 
-.c-fb {
-  border-color: var(--clr-facebook);
+.c-fb::before {
+  background-color: var(--clr-facebook);
 }
 
-.c-t {
-  border-color: var(--clr-twitter);
+.c-t::before {
+  background-color: var(--clr-twitter);
 }
 
-.c-i {
-  border-image: var(--clr-instagram) 100 0 0 0;
+.c-i::before {
+  background: var(--clr-instagram);
 }
 
-.c-y {
-  border-color: var(--clr-youtube);
+.c-y::before {
+  background-color: var(--clr-youtube);
 }
 
-.facebook,
+*/ .facebook,
 .twitter,
 .instagram,
 .youtube,
