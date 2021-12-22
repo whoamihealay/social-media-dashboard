@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [hfrontendmentor.io](https://www.frontendmentor.io/solutions/responsive-mobile-first-social-media-dashboard-html-css-js-OpAzQRuz3)
-- Live Site URL: [whoamihealay.github.io/social-media-dashboard/](hhttps://whoamihealay.github.io/social-media-dashboard/)
+- Live Site URL: [whoamihealay.github.io/social-media-dashboard/](https://whoamihealay.github.io/social-media-dashboard/)
 
 ## My process
 
